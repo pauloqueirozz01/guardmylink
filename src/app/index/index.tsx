@@ -1,4 +1,5 @@
 import { Categories } from "@/components/categories";
+import { Link } from "@/components/link";
 import { colors } from "@/styles/colors";
 import { MaterialIcons } from "@expo/vector-icons";
 import { Image, TouchableOpacity, View } from "react-native";
@@ -15,6 +16,11 @@ export default function Index() {
         </TouchableOpacity>
       </View>
       <Categories />
+      <Link
+        name="Portfólio Paulo"
+        url="https://pauloqueirozz.vercel.app"
+        onDetails={() => console.log("Clicou!")}
+      />
     </View>
   );
 }
